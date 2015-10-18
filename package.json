@@ -9,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^0.8.5",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
     "express-session": "^1.11.3",
-    "mongojs": "^1.4.1"
+    "mongojs": "^1.4.1",
+    "shortid": "^2.2.4"
   }
 }

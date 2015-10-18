@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Aspect</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script type="text/javascript" src="jquery.js"></script>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript">
+      var info = {
+        'Russia': '<p> There are several reasons why Russia did so badly in WWI, the first reason that they did badly was because they attacked two countries at one time. At the beginning of the war, Russia mobilised quicker than expected, but they immediately did the wrong thing by invading both Austria-Hungary and Germany at the same time. Doing this meant that they had to spread their troops over both fronts and they cant concentrate on one front at a time. This meant if there was a push on both fronts, Russia would be in trouble. This shows immediately fighting on two fronts was a large contribution to why Russia did so badly during WW1. </p> <p> The second reason that Russia did so badly was because they lost lots of supplies early on. During the battle of Tannenburg in August and the battle of the Masurian Lakes in September the Russians lost vast amounts of equipment and ammunition. The leader at the time was the cousin of Tsar Nicholas II, and he said he was “happy to make these sacrifices”. Also because they had group transporting guns and shells to the front, a third of the army didn’t even have their own rifle. This meant that Russian soldiers went into battle with their bear hands waiting for one of their comrades to die in front of them so they could have their rifle. This obviously contributed to the fact that Russia did so badly during the first World War. </p>',
+        'Weimar Republic': '<p>This is text about the Weimar Republic it is extremely interesting so I think you should read it.</p><p>This is more text about the Weimar Republic</p>',
+        'Treaty of Versailles': '<p>This is random text about the Treaty of Versailles yayayyyy</p>'
+      }
+      function change(name) {
+          $('#name').html(name);
+          $('#body').html(info[name]);
+      }
+      function addAspect() {
+        $('#hover').hide();
+        $('#inputAspect').fadeIn();
+
+      }
+  </script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+  <div id="title">Post WW1</div>
+  <br>
+  <!-- there are a few shorthand columns widths as well -->
+  <div class="row">
+    <div class="one-third column">
+        <div class="block" onclick="change('Russia')">Russia</div>
+        <div class="block" onclick="change('Weimar Republic')">Weimar Republic</div>
+        <div class="block" onclick="change('Treaty of Versailles')">Treaty of Versailles</div>
+        <div id="hover" onclick="addAspect()">Add Aspect</div>
+        <input id="inputAspect" style="display: none;"></input>
+    </div>
+    <div class="two-thirds column">
+        <div class="panel">
+            <center><h1 style="color: #fff; padding-top: 20px;" id="name">Russia</h1></center>
+            <div style="color: #fff; padding-left: 20px; padding-right: 20px;" id="body">
+                <p>
+                    There are several reasons why Russia did so badly in WWI, the first reason that they did badly was because they attacked two countries at one time. At the beginning of the war, Russia mobilised quicker than expected, but they immediately did the wrong thing by invading both Austria-Hungary and Germany at the same time. Doing this meant that they had to spread their troops over both fronts and they cant concentrate on one front at a time. This meant if there was a push on both fronts, Russia would be in trouble. This shows immediately fighting on two fronts was a large contribution to why Russia did so badly during WW1.
+                </p>
+                <p>
+                    The second reason that Russia did so badly was because they lost lots of supplies early on. During the battle of Tannenburg in August and the battle of the Masurian Lakes in September the Russians lost vast amounts of equipment and ammunition. The leader at the time was the cousin of Tsar Nicholas II, and he said he was “happy to make these sacrifices”. Also because they had group transporting guns and shells to the front, a third of the army didn’t even have their own rifle. This meant that Russian soldiers went into battle with their bear hands waiting for one of their comrades to die in front of them so they could have their rifle. This obviously contributed to the fact that Russia did so badly during the first World War.
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
